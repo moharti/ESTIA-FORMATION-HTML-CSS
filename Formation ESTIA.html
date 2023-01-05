@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estia.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- J'ai utilisé le site fonts.com qui m'a permis d'avoir des îcones en png (linkedIn,Twitter...Mailing) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>Formations - ESTIA</title>
+</head>
+<body>
+        <div class="header">
+            
+                <a rel="estia" href="https://www.estia.fr/" >
+                
+                    <img class="logo" src="data:image/png;base64,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"
+                alt="Retour à la page d'acceuil">
+                
+                </a>
+                
+            
+        
+    
+        
+            <div>
+                <div class="nav">
+                    <div class="current_nav"><a class="animation" href="https://www.estia.fr/formations" title="Formations(page active)">Formations</a>
+                    </div>
+
+                    <div class="navig"><a class="animation" href="https://www.estia.fr/entreprises" title="Entreprises">Entreprises</a>
+                    </div>
+
+                    <div class="navig"> <a class="animation" href="https://www.estia.fr/recherche" title="Recherche">Recherche</a>
+                    </div>
+
+                    <div class="navig"> <a class="animation" href="https://www.estia.fr/international" title="International">International</a>
+                    </div>
+
+                    <div class="navig"> <a class="animation" href="https://www.estia.fr/campus-estia" title="Campus">Campus</a>
+                    </div>
+
+                    <div class="navig"> <a class="animation" href="https://www.estia.fr/contactez-nous" title="Contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+            
+        
+        <img class="search" src="data:image/png;base64,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"
+            alt="search">
+        </div>
+
+        <div class="navigation">
+            <div class="accueil">ACCUEIL > FORMATION</div>
+            <div class="formation">Formation</div>
+            <div class="print">
+                <h4>A-</h4>
+                <h4>A</h4>
+                <h4>A+</h4>
+                <img id="printer" src="./images/printerlogo.png" alt="">
+            </div>
+        </div>
+    
+
+
+        
+        
+        <!-- ---------------------------------------------------------------------------------------------------------------------- -->
+        <div class="layout">
+            <div class="carte">
+                <a class="lien-carte" href="#">
+                    <img id="img-carte" src="./images/image1.jpg" alt="">
+                    <div class="banner-content">
+                        <span>cycle preparatoire ingenieur</span>
+                        <svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"
+                            width="100px" height="100px">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: #fff;
+                                    }
+                                </style>
+                            </defs>
+                            <title>picto-formation-ingenieur</title>
+                            <path class="cls-1"
+                                d="M92.19,42.27V26.43A1.57,1.57,0,0,0,91.3,25L49.12,4.71a1.55,1.55,0,0,0-1.36,0L5.57,25a1.57,1.57,0,0,0,0,2.82l14.74,7.09V56.12a1.58,1.58,0,0,0,.87,1.4A61.56,61.56,0,0,0,48.45,64l1.59,0A61.39,61.39,0,0,0,75.7,57.51a1.54,1.54,0,0,0,.86-1.39V34.93l12.5-6V42.27a6.24,6.24,0,0,0-4.68,6V59.24a1.56,1.56,0,0,0,1.56,1.56h9.37a1.56,1.56,0,0,0,1.57-1.56V48.3A6.25,6.25,0,0,0,92.19,42.27ZM73.44,55.14A58.3,58.3,0,0,1,50,60.8a57.89,57.89,0,0,1-26.52-5.66V36.44L47.76,48.15a1.6,1.6,0,0,0,.68.15,1.64,1.64,0,0,0,.68-.15L73.44,36.44Zm.89-22.6h0L48.44,45,22.55,32.54h0L9.85,26.43,48.44,7.85,87,26.43ZM93.75,57.68H87.5V48.3a3.13,3.13,0,0,1,6.25,0Z">
+                            </path>
+                        </svg>
+                    </div>
+                </a>
+                <a class="lien-carte" href="#">
+                    <img id="img-carte" src="./images/image2.jpg" alt="">
+                    <div class="banner-content">
+                        <span>bachelor en ingenieurie usine du future - post bac</span>
+                        <svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"
+                            width="100px" height="100px">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: #fff;
+                                    }
+                                </style>
+                            </defs>
+                            <title>picto-formation-ingenieur</title>
+                            <path class="cls-1"
+                                d="M92.19,42.27V26.43A1.57,1.57,0,0,0,91.3,25L49.12,4.71a1.55,1.55,0,0,0-1.36,0L5.57,25a1.57,1.57,0,0,0,0,2.82l14.74,7.09V56.12a1.58,1.58,0,0,0,.87,1.4A61.56,61.56,0,0,0,48.45,64l1.59,0A61.39,61.39,0,0,0,75.7,57.51a1.54,1.54,0,0,0,.86-1.39V34.93l12.5-6V42.27a6.24,6.24,0,0,0-4.68,6V59.24a1.56,1.56,0,0,0,1.56,1.56h9.37a1.56,1.56,0,0,0,1.57-1.56V48.3A6.25,6.25,0,0,0,92.19,42.27ZM73.44,55.14A58.3,58.3,0,0,1,50,60.8a57.89,57.89,0,0,1-26.52-5.66V36.44L47.76,48.15a1.6,1.6,0,0,0,.68.15,1.64,1.64,0,0,0,.68-.15L73.44,36.44Zm.89-22.6h0L48.44,45,22.55,32.54h0L9.85,26.43,48.44,7.85,87,26.43ZM93.75,57.68H87.5V48.3a3.13,3.13,0,0,1,6.25,0Z">
+                            </path>
+                        </svg>
+                    </div>
+                </a>
+                <a class="lien-carte" href="#">
+                    <img id="img-carte" src="./images/image3.jpg" alt="">
+                    <div class="banner-content">
+                        <span>bachelor designer concepteur industriel - post bac</span>
+                        <svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"
+                            width="100px" height="100px">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: #fff;
+                                    }
+                                </style>
+                            </defs>
+                            <title>picto-formation-ingenieur</title>
+                            <path class="cls-1"
+                                d="M92.19,42.27V26.43A1.57,1.57,0,0,0,91.3,25L49.12,4.71a1.55,1.55,0,0,0-1.36,0L5.57,25a1.57,1.57,0,0,0,0,2.82l14.74,7.09V56.12a1.58,1.58,0,0,0,.87,1.4A61.56,61.56,0,0,0,48.45,64l1.59,0A61.39,61.39,0,0,0,75.7,57.51a1.54,1.54,0,0,0,.86-1.39V34.93l12.5-6V42.27a6.24,6.24,0,0,0-4.68,6V59.24a1.56,1.56,0,0,0,1.56,1.56h9.37a1.56,1.56,0,0,0,1.57-1.56V48.3A6.25,6.25,0,0,0,92.19,42.27ZM73.44,55.14A58.3,58.3,0,0,1,50,60.8a57.89,57.89,0,0,1-26.52-5.66V36.44L47.76,48.15a1.6,1.6,0,0,0,.68.15,1.64,1.64,0,0,0,.68-.15L73.44,36.44Zm.89-22.6h0L48.44,45,22.55,32.54h0L9.85,26.43,48.44,7.85,87,26.43ZM93.75,57.68H87.5V48.3a3.13,3.13,0,0,1,6.25,0Z">
+                            </path>
+                        </svg>
+                    </div>
+                </a>
+                <a class="lien-carte" href="#">
+                    <img id="img-carte" src="./images/image4.jpg" alt="">
+                    <div class="banner-content">
+                        <span>cycle ingenieur / apres une cpge, dut, bts, l2, l3</span>
+                        <svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"
+                            width="100px" height="100px">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: #fff;
+                                    }
+                                </style>
+                            </defs>
+                            <title>picto-formation-ingenieur</title>
+                            <path class="cls-1"
+                                d="M92.19,42.27V26.43A1.57,1.57,0,0,0,91.3,25L49.12,4.71a1.55,1.55,0,0,0-1.36,0L5.57,25a1.57,1.57,0,0,0,0,2.82l14.74,7.09V56.12a1.58,1.58,0,0,0,.87,1.4A61.56,61.56,0,0,0,48.45,64l1.59,0A61.39,61.39,0,0,0,75.7,57.51a1.54,1.54,0,0,0,.86-1.39V34.93l12.5-6V42.27a6.24,6.24,0,0,0-4.68,6V59.24a1.56,1.56,0,0,0,1.56,1.56h9.37a1.56,1.56,0,0,0,1.57-1.56V48.3A6.25,6.25,0,0,0,92.19,42.27ZM73.44,55.14A58.3,58.3,0,0,1,50,60.8a57.89,57.89,0,0,1-26.52-5.66V36.44L47.76,48.15a1.6,1.6,0,0,0,.68.15,1.64,1.64,0,0,0,.68-.15L73.44,36.44Zm.89-22.6h0L48.44,45,22.55,32.54h0L9.85,26.43,48.44,7.85,87,26.43ZM93.75,57.68H87.5V48.3a3.13,3.13,0,0,1,6.25,0Z">
+                            </path>
+                        </svg>
+                    </div>
+                </a>
+                <a class="lien-carte" href="#">
+                    <img id="img-carte" src="./images/image5.jpg" alt="">
+                    <div class="banner-content">
+                        <span>master / masteres specialises</span>
+                        <svg width="100px" height="100px" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px"
+                            viewBox="206 206 100 100" enable-background="new 206 206 100 100" xml:space="preserve">
+                            <g>
+                                <path
+                                    d="M295.437,256.567l-0.001-1.066c0-3.068-2.496-5.564-5.563-5.564h-0.374c-0.455-15.416-11.371-28.252-25.88-31.638v-4.074   c0-3.068-2.496-5.564-5.563-5.564h-4.108c-3.069,0-5.565,2.496-5.565,5.564v4.074c-14.508,3.386-25.424,16.222-25.879,31.638   h-0.374c-3.068,0-5.565,2.496-5.565,5.564v1.067c0,2.868,2.181,5.236,4.972,5.533l-0.752,4.271c-0.198,1.124,0.056,2.261,0.715,3.2   c0.659,0.938,1.64,1.563,2.76,1.759l3.027,0.536c0.14,1.371,0.378,2.729,0.709,4.054l-2.655,1.535   c-2.045,1.181-2.749,3.806-1.568,5.852l3.61,6.251c0.569,0.989,1.493,1.697,2.601,1.995c0.372,0.099,0.749,0.149,1.123,0.149   c0.741,0,1.472-0.194,2.128-0.573l2.663-1.538c0.988,0.958,2.044,1.845,3.151,2.646l-1.05,2.888   c-0.391,1.072-0.339,2.235,0.146,3.274c0.484,1.041,1.342,1.828,2.414,2.217l6.784,2.471c0.482,0.175,0.975,0.258,1.459,0.258   c1.751,0,3.399-1.082,4.031-2.818l1.052-2.891c0.686,0.048,1.375,0.073,2.058,0.073c0.686,0,1.375-0.025,2.058-0.073l1.052,2.89   c0.632,1.737,2.278,2.819,4.031,2.819c0.485,0,0.978-0.083,1.46-0.258l6.783-2.471c1.072-0.389,1.929-1.176,2.413-2.217   c0.483-1.039,0.536-2.201,0.146-3.273l-1.051-2.889c1.108-0.802,2.163-1.688,3.152-2.646l2.661,1.536   c0.657,0.38,1.389,0.574,2.131,0.574c0.374,0,0.751-0.05,1.122-0.149c1.108-0.297,2.03-1.005,2.6-1.993l3.61-6.25   c0.57-0.989,0.721-2.144,0.425-3.252c-0.297-1.107-1.005-2.03-1.993-2.602l-2.657-1.535c0.333-1.329,0.571-2.687,0.711-4.057   l3.027-0.531c2.325-0.412,3.884-2.638,3.474-4.961l-0.749-4.262C293.193,261.871,295.437,259.477,295.437,256.567z    M250.385,214.225c0-1.964,1.598-3.561,3.562-3.561h4.108c1.964,0,3.561,1.597,3.561,3.561v3.672   c-1.826-0.31-3.701-0.473-5.615-0.473s-3.79,0.164-5.616,0.473V214.225z M248.382,220.362v9.757c0,0.553,0.448,1.001,1.001,1.001   s1.001-0.448,1.001-1.001v-10.189c1.823-0.329,3.7-0.501,5.616-0.501s3.792,0.172,5.615,0.501v10.19   c0,0.553,0.449,1.001,1.001,1.001c0.554,0,1.002-0.448,1.002-1.001v-9.758c13.396,3.338,23.426,15.269,23.876,29.575h-14.045   v-15.254c0-0.553-0.448-1.002-1.002-1.002s-1.002,0.449-1.002,1.002v15.254h-30.892v-15.254c0-0.553-0.448-1.002-1.001-1.002   s-1.001,0.449-1.001,1.002v15.254h-14.044C224.956,235.631,234.987,223.7,248.382,220.362z M287.273,269.361l-3.782,0.664   c-0.038,0.008-0.073,0.021-0.109,0.032c-0.016,0.004-0.033,0.008-0.049,0.013c-0.046,0.016-0.089,0.037-0.132,0.06   c-0.015,0.008-0.03,0.014-0.046,0.023c-0.038,0.022-0.073,0.05-0.108,0.077c-0.017,0.013-0.033,0.024-0.049,0.038   c-0.03,0.027-0.057,0.057-0.082,0.087c-0.018,0.019-0.034,0.037-0.051,0.058c-0.021,0.029-0.04,0.061-0.059,0.093   c-0.015,0.024-0.029,0.048-0.041,0.073c-0.017,0.033-0.029,0.067-0.041,0.103c-0.01,0.026-0.02,0.051-0.026,0.079   c-0.01,0.038-0.016,0.077-0.021,0.117c-0.003,0.021-0.01,0.04-0.012,0.061c-0.131,1.762-0.438,3.511-0.909,5.199   c-0.006,0.022-0.007,0.046-0.013,0.069c-0.006,0.034-0.014,0.068-0.018,0.104c-0.004,0.033-0.002,0.065-0.002,0.098   s0,0.063,0.003,0.096c0.003,0.034,0.01,0.066,0.016,0.1c0.007,0.03,0.012,0.061,0.021,0.089c0.01,0.032,0.022,0.062,0.035,0.093   c0.012,0.029,0.023,0.058,0.037,0.085c0.016,0.029,0.033,0.056,0.052,0.084c0.017,0.026,0.034,0.053,0.054,0.077   c0.021,0.027,0.045,0.052,0.069,0.075c0.021,0.022,0.042,0.044,0.065,0.063c0.028,0.024,0.061,0.045,0.093,0.066   c0.018,0.012,0.033,0.026,0.051,0.037l3.32,1.918c0.524,0.303,0.901,0.796,1.059,1.386c0.159,0.591,0.079,1.205-0.225,1.73   l-3.611,6.253c-0.302,0.524-0.792,0.9-1.382,1.059c-0.592,0.159-1.207,0.079-1.732-0.226l-3.326-1.918   c-0.019-0.012-0.041-0.019-0.062-0.027c-0.032-0.017-0.065-0.032-0.099-0.045c-0.03-0.011-0.062-0.019-0.094-0.027   c-0.03-0.007-0.062-0.016-0.093-0.021c-0.034-0.005-0.067-0.007-0.1-0.009c-0.031-0.001-0.063-0.003-0.094-0.002   s-0.063,0.006-0.096,0.011c-0.032,0.004-0.063,0.008-0.096,0.016c-0.03,0.008-0.059,0.017-0.088,0.026   c-0.031,0.011-0.063,0.021-0.095,0.035c-0.028,0.014-0.057,0.03-0.084,0.046c-0.028,0.017-0.056,0.032-0.082,0.052   c-0.03,0.02-0.057,0.045-0.085,0.07c-0.017,0.014-0.035,0.026-0.051,0.042c-1.235,1.263-2.594,2.403-4.041,3.392   c-0.019,0.013-0.034,0.028-0.051,0.042c-0.03,0.024-0.059,0.046-0.084,0.072c-0.023,0.022-0.043,0.047-0.063,0.07   c-0.021,0.025-0.042,0.05-0.061,0.078c-0.02,0.026-0.035,0.055-0.05,0.085c-0.017,0.026-0.031,0.055-0.044,0.083   c-0.013,0.03-0.022,0.06-0.032,0.091s-0.021,0.061-0.026,0.093c-0.007,0.031-0.01,0.062-0.014,0.093   c-0.005,0.033-0.009,0.065-0.009,0.098c-0.001,0.033,0.002,0.065,0.004,0.099c0.002,0.032,0.005,0.063,0.01,0.094   c0.007,0.036,0.018,0.071,0.026,0.106c0.007,0.022,0.01,0.044,0.018,0.065L272,295.81c0.208,0.57,0.18,1.19-0.078,1.745   c-0.259,0.554-0.714,0.973-1.282,1.18l-6.783,2.47c-1.184,0.43-2.495-0.182-2.924-1.362l-1.314-3.608   c-0.01-0.028-0.025-0.053-0.037-0.079c-0.012-0.025-0.022-0.052-0.036-0.075c-0.02-0.034-0.043-0.065-0.065-0.097   c-0.016-0.021-0.03-0.042-0.047-0.061c-0.025-0.03-0.055-0.057-0.083-0.083c-0.019-0.018-0.036-0.034-0.057-0.051   c-0.03-0.023-0.062-0.042-0.094-0.063c-0.022-0.014-0.045-0.029-0.069-0.041c-0.032-0.017-0.065-0.029-0.1-0.042   c-0.026-0.01-0.053-0.021-0.082-0.029c-0.033-0.01-0.068-0.015-0.103-0.021c-0.029-0.005-0.06-0.011-0.09-0.013   c-0.033-0.003-0.067-0.002-0.102-0.001c-0.026,0.001-0.051-0.002-0.076,0c-1.731,0.17-3.525,0.171-5.278,0   c-0.024-0.002-0.049,0.001-0.073,0c-0.035-0.001-0.069-0.002-0.104,0.001c-0.031,0.002-0.06,0.009-0.091,0.014   c-0.034,0.006-0.067,0.011-0.101,0.021c-0.029,0.009-0.057,0.02-0.085,0.031c-0.032,0.012-0.063,0.023-0.094,0.039   c-0.027,0.014-0.051,0.03-0.077,0.045c-0.029,0.02-0.059,0.036-0.085,0.058c-0.023,0.02-0.045,0.039-0.067,0.06   c-0.024,0.023-0.049,0.046-0.072,0.071c-0.021,0.025-0.04,0.052-0.059,0.078c-0.019,0.025-0.038,0.052-0.054,0.078   c-0.019,0.032-0.033,0.066-0.048,0.101c-0.009,0.02-0.021,0.038-0.029,0.06l-1.313,3.608c-0.43,1.181-1.742,1.792-2.923,1.363   l-6.785-2.472c-0.569-0.206-1.023-0.625-1.282-1.18c-0.258-0.555-0.287-1.174-0.079-1.743l1.313-3.607   c0.007-0.022,0.01-0.045,0.016-0.066c0.01-0.035,0.021-0.07,0.027-0.105c0.006-0.032,0.007-0.063,0.01-0.095   c0.002-0.033,0.006-0.065,0.005-0.099c0-0.032-0.005-0.065-0.009-0.098c-0.004-0.031-0.007-0.062-0.014-0.093   c-0.007-0.032-0.017-0.062-0.027-0.093c-0.01-0.031-0.02-0.061-0.032-0.091c-0.013-0.028-0.027-0.057-0.043-0.084   c-0.016-0.029-0.032-0.058-0.05-0.084c-0.018-0.028-0.039-0.053-0.061-0.077c-0.021-0.024-0.04-0.049-0.063-0.071   c-0.026-0.026-0.054-0.048-0.083-0.07c-0.018-0.015-0.033-0.031-0.053-0.044c-1.445-0.987-2.804-2.127-4.041-3.392   c-0.014-0.014-0.031-0.024-0.046-0.038c-0.03-0.026-0.06-0.054-0.093-0.077c-0.022-0.016-0.045-0.028-0.068-0.041   c-0.033-0.021-0.066-0.04-0.101-0.056c-0.024-0.011-0.05-0.019-0.075-0.027c-0.036-0.013-0.072-0.024-0.109-0.033   c-0.024-0.006-0.048-0.009-0.072-0.013c-0.04-0.007-0.08-0.011-0.12-0.013c-0.022,0-0.045,0.001-0.068,0.002   c-0.042,0.001-0.083,0.004-0.125,0.011c-0.023,0.003-0.044,0.01-0.067,0.015c-0.04,0.01-0.08,0.02-0.119,0.034   c-0.024,0.009-0.048,0.021-0.072,0.032c-0.027,0.013-0.056,0.022-0.082,0.037l-3.326,1.921c-0.525,0.302-1.139,0.382-1.73,0.223   c-0.591-0.157-1.083-0.534-1.386-1.06l-3.61-6.251c-0.628-1.09-0.254-2.488,0.836-3.117l3.317-1.918   c0.02-0.012,0.036-0.026,0.055-0.039c0.031-0.021,0.061-0.041,0.089-0.064c0.024-0.02,0.045-0.042,0.067-0.064   c0.023-0.023,0.046-0.047,0.067-0.073c0.021-0.025,0.038-0.053,0.056-0.079c0.017-0.027,0.035-0.054,0.049-0.082   c0.015-0.028,0.027-0.057,0.039-0.087c0.012-0.031,0.025-0.061,0.034-0.092c0.009-0.03,0.014-0.06,0.021-0.091   c0.006-0.032,0.013-0.064,0.016-0.098c0.003-0.032,0.003-0.065,0.003-0.099c0-0.03,0-0.062-0.003-0.094   c-0.003-0.037-0.011-0.072-0.019-0.109c-0.005-0.021-0.005-0.043-0.012-0.065c-0.471-1.683-0.777-3.432-0.91-5.198   c-0.002-0.018-0.007-0.034-0.009-0.052c-0.006-0.043-0.012-0.086-0.022-0.126c-0.007-0.025-0.017-0.051-0.025-0.076   c-0.013-0.035-0.026-0.071-0.042-0.105c-0.012-0.024-0.027-0.048-0.041-0.071c-0.02-0.032-0.038-0.064-0.061-0.093   c-0.015-0.021-0.033-0.04-0.049-0.059c-0.026-0.03-0.053-0.059-0.083-0.086c-0.017-0.015-0.035-0.028-0.053-0.042   c-0.033-0.025-0.066-0.051-0.102-0.071c-0.021-0.014-0.042-0.021-0.063-0.033c-0.036-0.018-0.072-0.035-0.11-0.05   c-0.028-0.009-0.057-0.017-0.086-0.024c-0.027-0.006-0.051-0.017-0.079-0.021l-3.783-0.669c-0.596-0.104-1.117-0.437-1.467-0.938   c-0.352-0.5-0.487-1.104-0.382-1.702l0.807-4.587h16.984c-0.852,2.034-1.299,4.238-1.299,6.46c0,9.205,7.488,16.692,16.691,16.692   c9.204,0,16.692-7.487,16.692-16.692c0-2.222-0.446-4.426-1.299-6.46h16.982l0.808,4.587   C289.341,267.957,288.51,269.142,287.273,269.361z M241.252,268.593c0-2.242,0.516-4.462,1.496-6.46h26.386   c0.979,1.998,1.496,4.218,1.496,6.46c0,8.1-6.59,14.689-14.689,14.689C247.841,283.282,241.252,276.692,241.252,268.593z    M289.872,260.13h-0.688l0,0h-66.485c-0.002,0-0.004,0-0.005,0h-0.564c-1.964,0-3.562-1.598-3.562-3.562v-1.067   c0-1.964,1.598-3.561,3.562-3.561h1.351c0.002,0,0.005,0,0.008,0c0.003,0,0.005,0,0.007,0h16.05c0.002,0,0.004,0,0.007,0   c0.002,0,0.005,0,0.008,0h32.879c0.003,0,0.005,0,0.008,0c0.002,0,0.005,0,0.008,0h16.05c0.003,0,0.006,0,0.008,0   c0.003,0,0.005,0,0.009,0h1.351c1.963,0,3.561,1.597,3.561,3.562l0.001,1.066C293.434,258.532,291.835,260.13,289.872,260.13z">
+                                </path>
+                                <path
+                                    d="M249.383,238.129h13.235c0.552,0,1.001-0.448,1.001-1.001s-0.449-1.002-1.001-1.002h-13.235   c-0.553,0-1.001,0.449-1.001,1.002S248.83,238.129,249.383,238.129z">
+                                </path>
+                                <path
+                                    d="M249.383,244.784h13.235c0.552,0,1.001-0.449,1.001-1.002c0-0.553-0.449-1.001-1.001-1.001h-13.235   c-0.553,0-1.001,0.449-1.001,1.001C248.382,244.336,248.83,244.784,249.383,244.784z">
+                                </path>
+                            </g>
+                        </svg>
+                    </div>
+                </a>
+                <a class="lien-carte" href="#">
+                    <img id="img-carte" src="./images/image6.jpg" alt="">
+                    <div class="banner-content">
+                        <span>formations en partenariat par apprentissage</span>
+                        <svg width="100px" height="100px" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"
+                            data-name="Layer 1" viewBox="0 0 100 100" x="0px" y="0px">
+                            <title>Artboard 11</title>
+                            <path
+                                d="M71.5,27.5h-43a11,11,0,0,0-11,11v23a11,11,0,0,0,11,11h43a11,11,0,0,0,11-11v-23A11,11,0,0,0,71.5,27.5ZM52.75,55,43,60V40l9.75,5,9.75,5Z">
+                            </path>
+                        </svg>
+                    </div>
+                </a>
+                <a class="lien-carte" href="#">
+                    <img id="img-carte" src="./images/image7.jpg" alt="">
+                    <div class="banner-content">
+                        <span>executive - evolution, reconversion professionnelle</span>
+                        <svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"
+                            width="100px" height="100px">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: #fff;
+                                    }
+                                </style>
+                            </defs>
+                            <title>picto-formation-ingenieur</title>
+                            <path class="cls-1"
+                                d="M92.19,42.27V26.43A1.57,1.57,0,0,0,91.3,25L49.12,4.71a1.55,1.55,0,0,0-1.36,0L5.57,25a1.57,1.57,0,0,0,0,2.82l14.74,7.09V56.12a1.58,1.58,0,0,0,.87,1.4A61.56,61.56,0,0,0,48.45,64l1.59,0A61.39,61.39,0,0,0,75.7,57.51a1.54,1.54,0,0,0,.86-1.39V34.93l12.5-6V42.27a6.24,6.24,0,0,0-4.68,6V59.24a1.56,1.56,0,0,0,1.56,1.56h9.37a1.56,1.56,0,0,0,1.57-1.56V48.3A6.25,6.25,0,0,0,92.19,42.27ZM73.44,55.14A58.3,58.3,0,0,1,50,60.8a57.89,57.89,0,0,1-26.52-5.66V36.44L47.76,48.15a1.6,1.6,0,0,0,.68.15,1.64,1.64,0,0,0,.68-.15L73.44,36.44Zm.89-22.6h0L48.44,45,22.55,32.54h0L9.85,26.43,48.44,7.85,87,26.43ZM93.75,57.68H87.5V48.3a3.13,3.13,0,0,1,6.25,0Z">
+                            </path>
+                        </svg>
+                    </div>
+                </a>
+                <a class="lien-carte" href="#">
+                    <img id="img-carte" src="./images/image8.jpg" alt="">
+                    <div class="banner-content">
+                        <span>doctorats</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        
+<!-- --------------------------------------------------------------------------------------------------------------------   -->
+
+        <div class="partenariats">
+            <h1>Les accréditations et partenariats majeurs de l'ESTIA</h1>
+            <div class="part1">
+                <img src="./images/ccibayonne.png" alt="">
+                <img src="./images/eur_ace.png" alt="">
+                <img src="./images/diplome.png" alt="">
+                <img src="./images/isae.png" alt="">
+                <img src="./images/ue.png" alt="">
+                <img src="./images/engage_europe.png" alt="">
+                <img src="./images/bordeaux.png" alt="">
+                <img src="./images/aquitaine.png" alt="">
+                <img src="./images/competences.jpg" alt="">
+                <img src="./images/Euskal_Hirigune_Elkargoa.jpg" width="9%" height="40%" alt="">
+                <img src="./images/grandesecoles.png" width="10%" height="40%" alt="">
+            </div>
+            <div class="social-media">
+                <h4>PARTAGER</h4>
+                <a href="https://www.linkedin.com/school/estia/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path
+                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                    </svg>
+                </a>
+                <a href="https://www.facebook.com/ingenieurs.estia">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path
+                            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                    </svg>
+                </a>
+                <a href="https://twitter.com/EstiaOfficiel">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path
+                            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                    </svg>
+                </a>
+                <a href="https://www.estia.fr/contactez-nous">
+                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                        <path
+                            d="M24 21h-24v-18h24v18zm-23-16.477v15.477h22v-15.477l-10.999 10-11.001-10zm21.089-.523h-20.176l10.088 9.171 10.088-9.171z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+ 
+
+    </body>
+
+
+
+
+<!--  --------------------------------------------------------------------------------------------------------------------------------  -->
+<footer>
+    <div class="find">
+        > ou nous trouver ?
+    </div>
+    <div class="map">
+        <div class="left"></div>
+        <div class="right">
+            <h2 class="trait">
+                L'ESTIA est un établissement de la CCI Bayonne Pays Basque
+            </h2>
+            <img src="./images/logo-estia.svg" alt="">
+            <img src="./images/Logo CCI bleu_2.png" width="20%" height="10%" alt="">
+        </div>
+        <img id="footer-image" src="./images/footer.png" alt="">
+    </div>
+    <div class="dataa">
+        <div class="row1">
+            <div class="h4">École d’ingénieurs ESTIA<br>ESTIA BERRI</div>
+            <div class="para">
+                Site technopolitain Izarbel<br> 90 Allée Fauste d’Elhuyar
+            </div>
+            <span class="addr">
+                64210 BIDART - FRANCE
+            </span>
+            <a class="visite" href="http://visitevirtuelle.estia.fr/" title="&nbsp;Visite virtuelle (nouvelle fenêtre)"
+                target="_blank" class="cadre">
+                <img id="picto" src="./images/360.svg" alt="">&nbsp;Visite virtuelle
+            </a>
+            <span class="addr">Téléphone accueil :</span>
+            <a class="visite" href="http://visitevirtuelle.estia.fr/" title="&nbsp;Visite virtuelle (nouvelle fenêtre)"
+                target="_blank" class="cadre">
+                <img id="picto" src="./images/phone.svg" alt="">&nbsp;+33559438400
+            </a>
+
+            <a class="mail" href="http://visitevirtuelle.estia.fr/" title="&nbsp;Visite virtuelle (nouvelle fenêtre)"
+                target="_blank" class="cadre">
+                Mail : <img id="mailo" src="./images/mail.svg" alt="">&nbsp;estia@estia.fr
+            </a>
+        </div>
+        
+        
+        <div class="row2">
+            <div class="social-media-footer">
+                <a href="https://www.instagram.com/estia_officiel/?hl=fr">
+                    <svg style="fill: #fff;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path
+                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                    </svg>
+                </a>
+                <a href="https://www.facebook.com/ingenieurs.estia/">
+                    <svg style="fill: #fff;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path
+                            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                    </svg>
+                </a>
+                <a href="https://twitter.com/EstiaOfficiel">
+                    <svg style="fill: #fff;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path
+                            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                    </svg>
+                </a>
+                <a href="">
+                    <svg style="fill: #fff;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>                
+                </a>
+                <a href="">
+                    <svg style="fill: #fff;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M14.829 6.302c-.738-.034-.96-.04-2.829-.04s-2.09.007-2.828.04c-1.899.087-2.783.986-2.87 2.87-.033.738-.041.959-.041 2.828s.008 2.09.041 2.829c.087 1.879.967 2.783 2.87 2.87.737.033.959.041 2.828.041 1.87 0 2.091-.007 2.829-.041 1.899-.086 2.782-.988 2.87-2.87.033-.738.04-.96.04-2.829s-.007-2.09-.04-2.828c-.088-1.883-.973-2.783-2.87-2.87zm-2.829 9.293c-1.985 0-3.595-1.609-3.595-3.595 0-1.985 1.61-3.594 3.595-3.594s3.595 1.609 3.595 3.594c0 1.985-1.61 3.595-3.595 3.595zm3.737-6.491c-.464 0-.84-.376-.84-.84 0-.464.376-.84.84-.84.464 0 .84.376.84.84 0 .463-.376.84-.84.84zm-1.404 2.896c0 1.289-1.045 2.333-2.333 2.333s-2.333-1.044-2.333-2.333c0-1.289 1.045-2.333 2.333-2.333s2.333 1.044 2.333 2.333zm-2.333-12c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.958 14.886c-.115 2.545-1.532 3.955-4.071 4.072-.747.034-.986.042-2.887.042s-2.139-.008-2.886-.042c-2.544-.117-3.955-1.529-4.072-4.072-.034-.746-.042-.985-.042-2.886 0-1.901.008-2.139.042-2.886.117-2.544 1.529-3.955 4.072-4.071.747-.035.985-.043 2.886-.043s2.14.008 2.887.043c2.545.117 3.957 1.532 4.071 4.071.034.747.042.985.042 2.886 0 1.901-.008 2.14-.042 2.886z"/></svg>
+                </a>
+            </div>
+            <div class="contacter">
+                CONTACTEZ-NOUS
+            </div>
+            <div class="pages">
+                <div class="pag1">> ACTUALITES</div>
+                <div class="pag1">> AGENDA</div>
+                <div class="pag1">> RESSOURCES HUMAINES / EMPLOI</div>
+                <div class="pag1">> DOCUMENTATION</div>
+                <div class="pag1">> HANDICAP ER RSE</div>
+                <div class="pag1">> APPELS D'OFFRES</div>
+                <div class="pag1">> PRESSES</div>
+            </div>
+        </div>
+        <div class="row3">
+                <div class="coat">
+                    Etablissement d'Enseignement Supérieur d'intérêt général, habilité à délivrer le
+                    Titre d'Ingénieur et membre de la  Conférence des Grandes Ecoles.
+                </div>
+        </div>
+    </div>
+    <div class="st-map">
+        <a class="map-nav" href="https://www.estia.fr/contactez-nous">Contactez-nous</a>
+        <div class="break">|</div>
+        <a class="map-nav" href="https://www.estia.fr/">Plan du site</a>
+        <div class="break">|</div>
+        <a class="map-nav" href="">Mentions legales et qualite</a>
+        <div class="break">|</div>
+        <a class="map-nav" href="">Cookies</a>
+        <div class="break">|</div>
+        <a class="map-nav" href="">Politique de confidentialite</a>
+    </div>
+</footer>
+
+
+
+
+</html>
